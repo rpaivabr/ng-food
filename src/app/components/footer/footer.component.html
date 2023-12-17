@@ -1,0 +1,14 @@
+<footer>
+  <nav>
+    <ul>
+      @for(item of items; track item.icon) {
+      <li>
+        <a [routerLink]="[item.link]">
+          <mat-icon class="icon" [fontIcon]="item.icon" />
+          <span>{{ item.text }}</span>
+        </a>
+      </li>
+      }
+    </ul>
+  </nav>
+</footer>
